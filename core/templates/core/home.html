@@ -1,6 +1,99 @@
-{% load static %}
 
-<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+{% load static %}
+{% comment %} 
 <h3> hello Mishika</h3>
 
-<img src="{% static 'images/mishi.jpg' %}">
+ {% endcomment %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body>
+    <br>
+    <div class"container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body h-100  border-info" id="profile-wrapper"> 
+                    <img id="profile-pic" src="{% static 'images/mishi.jpg' %}">
+                    <hr>
+                    <h4> Hi, I am Mishika!</h4> 
+                    <p> Passionate coder,Developer, tech enthusiast,Team Leader</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body h-100  border-info">
+                <h4> I am UnderGraduate student at PES university,Banglore</h4>
+                
+                <hr>
+                <p>
+                    I love to code since my 11th standard,enhancing my knowledge everyday in Software development field
+                </p>
+					<p>Started with writing a simple Hello world Program to working on real-time Projects,acquired a good knowledge of technology</p>
+                    <p>Worked on Projects based on Android& iOS development ,Web development,Python </p>
+                    <p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
+
+				
+					<ul class="social-links">
+						<li><img class="social" src="{% static 'images/insta.jpg' %}"></li>
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+						<li><img class="social" src="{% static 'images/medium.png' %}"></li>
+					</ul>
+                 </div>
+            </div> 
+        </div>
+        <br>
+         <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100  border-info"> 
+                <h5>My Experience as a Developer</h5>
+					<hr>
+					<p>Android and iOS Developer at Knowlexon Pvt Lim.</p>
+					<p>Worked in a team to develop android based application for retrieving
+information regarding the number of active Corona cases,recovered
+cases and death rate sorted by regions</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100  border-info">
+                <h5>What I Know</h5>
+					<hr>
+					<p>C++,Python, HTML/CSS, JavaScript, SQL,Dart,Java</p>
+					<p>Django,React,Tkinter,Flutter,Firebase</p>
+                 </div>
+            </div> 
+        </div>
+        <br>
+         <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100 border-info">
+                <h5>Extracurricular Activities</h5>
+				<hr>
+				<p>Volunteered in India’s Largest Blockchain Developer
+Conference Genesis DevCon 2k19 Organised by IBC MEDIA</p>
+<p>Volunteered in Inter College Hackathon Kalpana-2019 Organised by
+IEEE</p>
+				
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100  border-info"> 
+                
+
+                 <h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p> 
+                </div>
+            </div> 
+        </div>
+        <br>
+    </div>
+</body>
+</html>
